@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", cursive;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/*RIGHT-SIDE*/
+
+.hero__img {
+  flex: 0 1 50%;
+}
+
+.library {
+  height: 100vh;
+}
+
+/*LEFT-SIDE*/
+
+.hero__text {
+  flex: 0 1 50%;
+  margin: 40px;
+}
+
+.hero__header {
+  padding-right: 50px;
+}
+
+.hero__header h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.hero__header p {
+  font-size: 19px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.hero__form {
+  margin-top: 20px;
+}
+
+.hero__form h2 {
+  font-size: 24px;
+}
