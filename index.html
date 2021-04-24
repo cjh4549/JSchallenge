@@ -39,6 +39,7 @@
         <!--FORM-->
         <div class="hero__form">
           <h2>About you</h2>
+
           <form action="" class="hero__form-container">
             <div class="hero__form-name--first">
               <label for="firstName">First Name</label>
@@ -74,6 +75,17 @@
                 <option value="Magazine"></option>
               </datalist>
             </div>
+            <div class="hero__form-phone">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phoneNumber"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="555-555-5555"
+              />
+            </div>
+            <button class="btn">Send</button>
           </form>
         </div>
       </div>

@@ -68,6 +68,14 @@ body {
   font-weight: 700;
 }
 
+.hero__form-container div input {
+  font-size: 16px;
+  font-family: inherit;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2px;
+}
+
 .hero__form-container div:nth-child(-n + 2) {
   display: flex;
   flex-direction: column;
@@ -75,10 +83,26 @@ body {
   margin-right: 20px;
 }
 
-.hero__form-container div input {
+.hero__form-container div:nth-child(n + 3) {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-top: 20px;
+  padding-right: 50px;
+}
+
+.btn {
   font-size: 16px;
-  font-family: inherit;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 2px;
+  margin-top: 20px;
+  padding: 10px 27px;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+/* Placeholder text enhancement */
+
+.hero__form-book input::placeholder {
+  color: burlywood;
 }
