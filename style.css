@@ -16,21 +16,21 @@ body {
   height: 100vh;
 }
 
-/*LEFT-SIDE*/
+/*LEFT-CONTAINER*/
 
 .hero__img {
-  flex: 0 1 50%;
+  margin-right: 20px;
 }
 
 .library {
+  width: 50vw;
   height: 100vh;
 }
 
-/*RIGHT-SIDE*/
+/*RIGHT-HEADINGS*/
 
 .hero__text {
-  flex: 0 1 50%;
-  margin: 40px;
+  padding: 20px;
 }
 
 .hero__header {
@@ -38,12 +38,12 @@ body {
 }
 
 .hero__header h1 {
-  font-size: 80px;
+  font-size: 75px;
   font-weight: 700;
 }
 
 .hero__header p {
-  font-size: 19px;
+  font-size: 16px;
   color: #777;
   margin-top: 20px;
 }
@@ -51,33 +51,34 @@ body {
 /* FORM SECTION */
 
 .hero__form {
-  margin-top: 20px;
+  padding: 0 20px;
 }
 
 .hero__form h2 {
-  font-size: 26px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
 .hero__form-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .hero__form-container div label {
   font-weight: 700;
 }
 
-.hero__form-container div {
+.hero__form-container div:nth-child(-n + 2) {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 0 1 45%;
   margin-right: 20px;
 }
 
 .hero__form-container div input {
-  font-size: 17px;
+  font-size: 16px;
   font-family: inherit;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   padding: 2px;
 }

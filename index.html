@@ -22,44 +22,62 @@
           alt="a picture of library"
         />
       </div>
-      <!---->
-      <div class="hero__text">
-        <div class="hero__header">
-          <h1>It's going down for real.</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
-            ex deserunt, at ipsum laudantium asperiores facere a voluptate
-            voluptatum nesciunt dolorum, quos non quia vero commodi sequi,
-            labore sed. Fugiat?
-          </p>
+      <!--HEADINGS-->
+      <div class="rightside-container">
+        <div class="hero__text">
+          <div class="hero__header">
+            <h1>It's going down for real.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum adipisci quis perferendis vitae modi eligendi.
+              Aspernatur quod tenetur ipsum perspiciatis, pariatur praesentium
+              temporibus, distinctio, animi architecto possimus quaerat nostrum
+              consequuntur!
+            </p>
+          </div>
         </div>
         <!--FORM-->
         <div class="hero__form">
           <h2>About you</h2>
           <form action="" class="hero__form-container">
-            <div class="hero__form-container--first">
+            <div class="hero__form-name--first">
               <label for="firstName">First Name</label>
               <input
                 type="text"
                 id="firstName"
-                name="firstName"
+                name="user_firstName"
                 placeholder="Jane"
                 required
               />
             </div>
-            <div class="hero__form-container--last">
+            <div class="hero__form-name--last">
               <label for="lastName">Last Name</label>
               <input
                 type="text"
                 id="lastName"
-                name="lastName"
+                name="user_lastName"
                 placeholder="Doe"
                 required
               />
             </div>
+            <div class="hero__form-book">
+              <label for="bookType">Type of Book Choice</label>
+              <input
+                list="typeOfBooks"
+                name="booktype"
+                id="bookType"
+                placeholder="Hardcover"
+              />
+              <datalist id="typeOfBooks">
+                <option value="Hardcover"></option>
+                <option value="Ebook"></option>
+                <option value="Magazine"></option>
+              </datalist>
+            </div>
           </form>
         </div>
       </div>
+
       <!---->
     </section>
   </body>
